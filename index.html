@@ -20,14 +20,13 @@
         <div class="contenido">
             <header>
                 <div class="contenido-header">
-                    <h1>/LP/</h1>
+                    <h1>/POC/</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#sobremi">Sobre mi</a></li>
-                            <li><a href="#servicios">Servicios</a></li>
-                            <li><a href="#portafolio">Portafolio</a></li>
-                            <li><a href="#contacto ">Contacto</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar (this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar (this)">Sobre mi</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar (this)">Portafolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar (this)">Contacto</a></li>
                         </ul>
                     </nav>
 
@@ -39,26 +38,211 @@
                         <a href="#"><i class="fa-brands fa-github"></i></a>
                         <a href="#"><i class="fa-solid fa-envelope"></i></a>
                         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     </div>
 
                 </div>
             </header>
             <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
+                <p class="bienvenida">BIENVENIDOS</p>
                 <h2>Soy <span>Pedro Ortiz </span> Desarrollador FullStack</h2>
-                <p class="descripcion">Hola, soy Pedro Ortiz, actualmente soy estudiante de la Universidad Rosario
-                    Castellanos en la carrera Tecnologias en la informacion. Recientemente, he completado un bootcamp en Fullstack,
-                    lo que me ha permitido adquirir habilidades en el desarrollo de aplicaciones web tanto en el
-                    frontend como en el backend. Me apasiona la innovación y la tecnología, siempre estoy buscando
-                    nuevas formas de resolver problemas y mejorar los procesos mediante el uso de herramientas
-                    tecnológicas. Con mi sólida formación en programación y mi interés por la tecnología, me siento
-                    preparado para una carrera exitosa en el campo de la tecnología.</p>
-                    <a href="#portafolio">Ir al portafolio.</a>
+                <p class="descripcion">"Con cada línea de código que escribo, busco crear soluciones innovadoras y <br>
+                    eficientes que mejoren la experiencia del usuario y valor al mundo de la tecnología."</p>
+                <a href="#portafolio">Ir al portafolio.</a>
             </div>
         </div>
     </section>
 
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="images/foto.jpeg" alt="foto perfil">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola, soy <span>Pedro Ortiz</span></h2>
+            <h3>Desarrollador FullStack</h3>
+
+            <p>Hola, soy Pedro Ortiz. Tengo 24 años y me especializo en tecnologías de la información y la comunicación.
+                Recientemente, he completado un Bootcamp en desarrollo Fullstack y estoy emocionado por las
+                oportunidades que esto me brinda en el campo de la tecnología. Me apasiona el proceso de crear
+                soluciones innovadoras que mejoren la vida de las personas y busco constantemente desafiarme a mí mismo
+                para aprender y crecer en mi carrera.  </p>
+                <p>Si te interesa mi perfil profesional te dejo mi CV</p>
+            <a href="">Descargar CV</a>
+        </div>
+    </section>
+
+
+    
+<div class="contenedor-skills" id="skills">
+    <h3>Habilidades</h3>
+    <div class="skill">
+        <div class="info">
+            <p><span class="lista"></span>HTML y CSS</p>
+            <span class="porcentaje">95%</span>
+        </div>
+        <div class="barra">
+            <div id="html" class="barra-progreso1"></div>
+        </div>
+    </div>
+    
+    <div class="skill">
+        <div class="info">
+            <p><span class="lista"></span>Javascript</p>
+            <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+            <div id="js" class=""></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="info">
+            <p><span class="lista"></span>Data base</p>
+            <span class="porcentaje">85%</span>
+        </div>
+        <div class="barra">
+            <div id="bd" class=""></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="info">
+            <p><span class="lista"></span>Ingles</p>
+            <span class="porcentaje">75%</span>
+        </div>
+        <div class="barra">
+            <div id="ing" class=""></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="info">
+            <p><span class="lista"></span>React</p>
+            <span class="porcentaje">85%</span>
+        </div>
+        <div class="barra">
+            <div id="react" class=""></div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+<section id="portafolio">
+    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+    <div class="fila">
+        <a href="https://arik06.github.io/kira-vape-trabajo-final/">
+            <div class="proyecto">
+              <div class="overlay">
+                <img src="images/proyecto1.JPG" alt="">
+                <div class="info">
+                  <h4>Landing de Venta</h4>
+                  <p>sitio que tiene intención de comunicar un producto para su venta</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+          <a href="https://arik06.github.io/trabajo-ucamp-2/">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="images/proyecto2.JPG" alt="">
+          <div class="info">
+            <h4>Aplicación CRUD</h4>
+            <p>aplicación en el cual el usuario pueda agregar, modificar, actualizar o borrar un dato específico. </p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://arik06.github.io/bootcamp-3/">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="images/proyecto3.JPG" alt="">
+          <div class="info">
+            <h4>Dashboard App</h4>
+            <p>aplicación realizando una conexión a un API (financiera, educativa, social) y presentar datos en una interfaz</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://arik06.github.io/este-si-/">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="images/proyecto4.JPG" alt="">
+          <div class="info">
+            <h4>Restaurant App</h4>
+            <p>aplicación que cuenta con la presentación de un restaurante, su menú, horarios, información de contacto</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  
+
+    <a href="https://arik06.github.io/ucamp-enero/">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="images/proyecto5.JPG" alt="">
+          <div class="info">
+            <h4>E Commerce App</h4>
+            <p> aplicación FULLSTACK</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+  </section>
+  
+  
+
+
+<section class="contacto" id="#contacto">
+    <h2>Contáctame</h2>
+    <form>
+      <div class="form-group" id="contacto">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Número telefónico</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+      <div class="form-group">
+        <label for="necesidad">Indícanos qué necesitas</label>
+        <textarea id="necesidad" name="necesidad" rows="5" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+      
+    </form>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p>Todos los derechos reservados &copy; Pedro Ortiz</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+<script src="script.js"></script>
 </body>
 
 </html>
